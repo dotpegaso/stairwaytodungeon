@@ -27,11 +27,13 @@ const Main: FC = () => (
       <S.SmallText>Faça download do zine, é gratuito ⤵</S.SmallText>
       <>
         <S.RainbowButton
+          id="pdf-download"
           href="https://drive.google.com/file/d/1Id-cRlGqDLeDdLYlWnXL1jzw_g055yT8"
           target="_blank">
           PDF
         </S.RainbowButton>
         <S.RainbowButton
+          id="pack-download"
           href="https://drive.google.com/drive/folders/1BLdEVxxwZ5RGwXNQyFbvdZKrNUew_K2E"
           target="_blank">
           Material para impressão
