@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src",
+    "export": "next export",
     "test": "jest",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
