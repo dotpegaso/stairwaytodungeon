@@ -1,5 +1,21 @@
-import styled from 'styled-components/macro'
+import styled, { css } from 'styled-components/macro'
 import { rainbowEffect } from '../../styles/animations'
+
+const defaultText = css`
+  margin: 0;
+  color: var(--light);
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 300;
+  width: 90%;
+  margin-bottom: 30px;
+
+  @media (max-width: 490px) {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+  }
+`
 
 export const Container = styled.main`
   color: var(--light);
@@ -58,27 +74,13 @@ export const RainbowText = styled.h1`
 `
 
 export const Text = styled.p`
-  margin: 0;
-  color: var(--light);
-  font-size: 24px;
-  line-height: 1.5;
-  font-weight: 300;
-  width: 90%;
-  margin-bottom: 30px;
+  ${defaultText}
+`
 
-  ${(props) =>
-    props.small &&
-    `
-    color: var(--light);
-    font-size: 18px;
-    opacity: 0.5;
-  `}
-
-  @media (max-width: 490px) {
-    width: 100%;
-    margin: 30px auto;
-    text-align: center;
-  }
+export const SmallText = styled.p`
+  ${defaultText}
+  font-size: 18px;
+  opacity: 0.5;
 `
 
 export const Image = styled.img`

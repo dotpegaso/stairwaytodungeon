@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { FC } from 'react'
 import * as S from './styles'
 
-const Main = () => (
+interface IProps {
+  small: boolean
+}
+
+const Main: FC = () => (
   <S.Container>
     <S.Content>
       <S.RainbowText>Old School Revival Toolkit</S.RainbowText>
@@ -12,15 +16,15 @@ const Main = () => (
     </S.Content>
 
     <S.Content>
-      <S.Text small>
+      <S.SmallText>
         &quot;Aqueles que se aventuram devem sempre cantar os feitos de outros
         aventureiros, então marque bem suas ações.&quot;
-      </S.Text>
+      </S.SmallText>
       <S.Text>
         Que suas histórias se tornem inesquecíveis por meios de ideias
         não-convencionais.
       </S.Text>
-      <S.Text small>Faça download do zine, é gratuito ⤵</S.Text>
+      <S.SmallText>Faça download do zine, é gratuito ⤵</S.SmallText>
       <>
         <S.RainbowButton
           href="https://drive.google.com/file/d/1Id-cRlGqDLeDdLYlWnXL1jzw_g055yT8"
