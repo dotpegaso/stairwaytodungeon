@@ -1,6 +1,6 @@
 {
-  "name": "React Avançado - Boilerplate",
-  "short_name": "React Avançado",
+  "name": "Stairway to Dungeon",
+  "short_name": "Stairway to Dungeon",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -14,8 +14,8 @@
     }
   ],
   "background-color": "06092B",
-  "description": "Boilerplate utilizando Typescript, React, NextJS e Styled Components!",
+  "description": "A free brazilian OSR RPG zine!",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "06092B"
+  "theme_color": "#111111"
 }

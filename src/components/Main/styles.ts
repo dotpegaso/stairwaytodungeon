@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components/macro'
-import { rainbowEffect } from '../../styles/animations'
+import { rainbowEffect, liftUp } from '../../styles/animations'
 
 const defaultText = css`
   margin: 0;
@@ -15,6 +15,12 @@ const defaultText = css`
     margin: 30px auto;
     text-align: center;
   }
+`
+
+const animation = css`
+  opacity: 0;
+  transition: .2s; all ease;
+  animation: ${liftUp} .2s ease forwards;
 `
 
 export const Container = styled.main`
@@ -40,6 +46,19 @@ export const Content = styled.div`
   height: 50vh;
   align-items: flex-end;
   max-width: 400px;
+  ${animation}
+
+  &:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 0.5s;
+  }
 
   &:last-of-type {
     flex: 2.5;
@@ -96,8 +115,7 @@ export const Image = styled.img`
 
 export const RainbowButton = styled.a`
   text-decoration: none;
-  height: 60px;
-  padding: 0 40px;
+  padding: 15px 40px;
   border-radius: 4px;
   text-align: center;
   background: transparent;
@@ -106,9 +124,10 @@ export const RainbowButton = styled.a`
   transition: 0.2s all ease;
   cursor: pointer;
   position: relative;
-  display: flex;
+  display: block;
   align-items: center;
   font-weight: 600;
+  color: var(--light);
   ${rainbowEffect}
 
   :first-of-type {
@@ -129,7 +148,7 @@ export const RainbowButton = styled.a`
     margin-bottom: 20px;
     justify-content: center;
     font-size: 1.8em;
-    padding: 0;
+    padding: 15px 0;
   }
 `
 
@@ -143,6 +162,8 @@ export const Link = styled.a`
   margin-top: 20px;
 
   @media (max-width: 490px) {
-    padding-bottom: 50px;
+    padding-bottom: 3px;
+    margin: 0 auto 50px;
+    text-align: center;
   }
 `

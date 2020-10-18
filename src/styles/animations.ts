@@ -23,3 +23,14 @@ export const rainbowEffect = css`
   animation: ${gradientShift} 20s ease infinite;
   -webkit-text-fill-color: transparent;
 `
+
+export const liftUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
