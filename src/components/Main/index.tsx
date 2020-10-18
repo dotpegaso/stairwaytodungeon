@@ -28,13 +28,13 @@ const Main: FC = () => (
       <>
         <S.RainbowButton
           id="pdf-download"
-          href="https://drive.google.com/file/d/1Id-cRlGqDLeDdLYlWnXL1jzw_g055yT8"
+          href="https://drive.google.com/file/d/1Id-cRlGqDLeDdLYlWnXL1jzw_g055yT8/view?usp=sharing"
           target="_blank">
           PDF
         </S.RainbowButton>
         <S.RainbowButton
           id="pack-download"
-          href="https://drive.google.com/drive/folders/1BLdEVxxwZ5RGwXNQyFbvdZKrNUew_K2E"
+          href="https://drive.google.com/drive/folders/1BLdEVxxwZ5RGwXNQyFbvdZKrNUew_K2E?usp=sharing"
           target="_blank">
           Material para impressão
         </S.RainbowButton>
