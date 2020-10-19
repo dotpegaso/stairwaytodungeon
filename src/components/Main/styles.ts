@@ -43,21 +43,29 @@ export const Content = styled.div`
   flex: 1;
   text-align: left;
   display: flex;
-  height: 50vh;
+  height: 45%;
   align-items: flex-end;
   max-width: 400px;
   ${animation}
 
   &:nth-child(1) {
-    animation-delay: 0.3s;
-  }
-
-  &:nth-child(2) {
     animation-delay: 0.4s;
   }
 
-  &:nth-child(3) {
+  &:nth-child(2) {
     animation-delay: 0.5s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  &:first-of-type {
+    flex: 2.5;
+
+    @media (max-width: 490px) {
+      flex: none;
+    }
   }
 
   &:last-of-type {
