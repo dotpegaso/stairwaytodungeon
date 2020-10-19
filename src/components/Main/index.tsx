@@ -16,12 +16,8 @@ const Main: FC = () => (
     </S.Content>
 
     <S.Content>
-      <S.SmallText>
-        &quot;Aqueles que se aventuram devem sempre cantar os feitos de outros
-        aventureiros, então marque bem suas ações.&quot;
-      </S.SmallText>
       <S.Text>
-        Que suas histórias se tornem inesquecíveis por meios de ideias
+        Que suas histórias se tornem inesquecíveis através de ideias
         não-convencionais.
       </S.Text>
       <S.SmallText>Faça download do zine, é gratuito ⤵</S.SmallText>

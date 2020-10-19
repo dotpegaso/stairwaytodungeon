@@ -105,7 +105,7 @@ export const SmallText = styled.p`
 export const Image = styled.img`
   width: 100%;
   object-fit: contain;
-  opacity: 0.1;
+  opacity: 0.2;
 
   @media (max-width: 490px) {
     width: 50%;
