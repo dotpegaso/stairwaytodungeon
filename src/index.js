@@ -1,11 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ReactGA from "react-ga";
 import GlobalStyles from "./styles/global";
 import Home from "./pages/home";
 import reportWebVitals from "./reportWebVitals";
 
 import "./styles/colors.css";
 import "./styles/fonts.css";
+
+ReactGA.initialize("UA-89081172-3");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>

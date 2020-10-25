@@ -57,13 +57,14 @@ const Home = () => (
             href="https://twitter.com/dotpegaso"
             target="_blank"
             rel="noreferrer"
+            id="writer-instagram"
           >
             @dotpegaso
           </a>
           , que serve como ferramenta criativa para jogadores de rpg
         </S.Text>
         <S.RainbowButton
-          id="instagram"
+          id="zine-instagram"
           href="https://instagram.com/stairwaytodungeon"
           target="_blank"
         >
