@@ -1,50 +1,67 @@
-import styled, { css } from 'styled-components/macro'
-import { rainbowEffect, liftUp } from '../../styles/animations'
-
-const defaultText = css`
-  margin: 0;
-  color: var(--light);
-  font-size: 24px;
-  line-height: 1.5;
-  font-weight: 300;
-  width: 90%;
-  margin-bottom: 30px;
-
-  @media (max-width: 490px) {
-    width: 100%;
-    margin: 30px auto;
-    text-align: center;
-  }
-`
+import styled, { css } from "styled-components/macro";
+import { rainbowEffect, liftUp } from "../../styles/animations";
+import Feed from "react-instagram-authless-feed";
 
 const animation = css`
   opacity: 0;
   transition: .2s; all ease;
   animation: ${liftUp} .2s ease forwards;
-`
+`;
 
 export const Container = styled.main`
   color: var(--light);
   width: 100%;
-  height: 100%;
+  height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 
   @media (max-width: 490px) {
     flex-wrap: wrap;
     padding: 40px 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
   }
-`
+`;
+
+export const Wrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+
+  :first-of-type {
+    margin-top: 60px;
+    height: calc(55% - 60px);
+    justify-content: space-evenly;
+
+    @media (max-width: 490px) {
+      flex-wrap: wrap;
+      height: 100%;
+      margin-top: 20px;
+      align-items: flex-start;
+    }
+  }
+
+  :last-of-type {
+    height: 45%;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @media (max-width: 490px) {
+      flex-direction: column-reverse;
+    }
+  }
+`;
 
 export const Content = styled.div`
   padding: 0 45px;
   flex: 1;
   text-align: left;
   display: flex;
-  height: 45%;
-  align-items: flex-end;
+  align-items: center;
   max-width: 400px;
   ${animation}
 
@@ -85,11 +102,11 @@ export const Content = styled.div`
     height: initial;
     flex: none;
   }
-`
+`;
 
 export const RainbowText = styled.h1`
   ${rainbowEffect}
-  font-size: 8rem;
+  font-size: 10vh;
   max-width: 350px;
   font-weight: 600;
   margin: 0 auto;
@@ -98,17 +115,37 @@ export const RainbowText = styled.h1`
   @media (max-width: 490px) {
     font-size: 6rem;
   }
-`
+`;
 
 export const Text = styled.p`
-  ${defaultText}
-`
+  margin: 0;
+  color: var(--light);
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 300;
+  width: 90%;
+  margin-bottom: 30px;
 
-export const SmallText = styled.p`
-  ${defaultText}
-  font-size: 18px;
-  opacity: 0.5;
-`
+  a {
+    color: var(--light);
+    font-style: normal;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 490px) {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  ${(props) =>
+    props.small &&
+    `
+    font-size: 18px;
+    color: var(--dark-text);
+  `}
+`;
 
 export const Image = styled.img`
   width: 100%;
@@ -119,7 +156,7 @@ export const Image = styled.img`
     width: 50%;
     margin: 30px auto;
   }
-`
+`;
 
 export const RainbowButton = styled.a`
   text-decoration: none;
@@ -136,6 +173,7 @@ export const RainbowButton = styled.a`
   align-items: center;
   font-weight: 600;
   color: var(--light);
+  max-width: 300px;
   ${rainbowEffect}
 
   :first-of-type {
@@ -158,7 +196,7 @@ export const RainbowButton = styled.a`
     font-size: 1.8em;
     padding: 15px 0;
   }
-`
+`;
 
 export const Link = styled.a`
   font-size: 15px;
@@ -174,4 +212,50 @@ export const Link = styled.a`
     margin: 0 auto 50px;
     text-align: center;
   }
-`
+`;
+
+export const StyledFeed = styled(Feed)`
+  height: calc(100% - 140px);
+  width: fit-content;
+
+  & img {
+    height: 100%;
+    margin: 0 10px;
+
+    @media (max-width: 490px) {
+      width: 77%;
+      margin: 10px auto;
+      object-fit: contain;
+    }
+  }
+
+  @media (max-width: 490px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1400px) {
+    height: calc(100% - 180px);
+  }
+`;
+
+export const Footer = styled.div`
+  width: 30%;
+
+  @media (max-width: 490px) {
+    width: 80%;
+    margin: 0 auto 40px;
+  }
+
+  @media (min-width: 1400px) {
+    height: calc(100% - 180px);
+  }
+
+  a,
+  p {
+    margin: 20px auto;
+  }
+
+  a:first-of-type {
+    margin: 0 auto;
+  }
+`;

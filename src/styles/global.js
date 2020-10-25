@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -20,10 +20,6 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Commissioner', sans-serif;
     background-color: var(--main-background);
   }
+`;
 
-  h1, h2, h3, p, span {
-    pointer-events: none;
-  }
-`
-
-export default GlobalStyles
+export default GlobalStyles;

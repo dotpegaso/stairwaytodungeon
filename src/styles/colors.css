@@ -1,5 +1,7 @@
 :root {
   --main-background: #111;
   --light: #B5BFD2;
+  --dark: #3f3f3f;
+  --dark-text: #787878;
   --rainbow: #ffe580 4.38%, #ff7571 11.51%, #ff7270 25.06%, #ea5dad 36.04%, #c2a0fd 47.63%, #9867f0 59.03%, #3bf0e4 69.96%, #33ce43 83.74%, #b2f4b6 95.62%;
 }

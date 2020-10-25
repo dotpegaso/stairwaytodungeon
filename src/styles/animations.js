@@ -1,4 +1,4 @@
-import { keyframes, css } from 'styled-components'
+import { keyframes, css } from "styled-components";
 
 export const gradientShift = keyframes`
   0% {
@@ -13,7 +13,7 @@ export const gradientShift = keyframes`
   100% {
     background-position: 58% 50%;
   }
-`
+`;
 export const rainbowEffect = css`
   background: linear-gradient(264.51deg, var(--rainbow));
   background-position: 58% 50%;
@@ -22,7 +22,7 @@ export const rainbowEffect = css`
   -webkit-background-clip: text;
   animation: ${gradientShift} 20s ease infinite;
   -webkit-text-fill-color: transparent;
-`
+`;
 
 export const liftUp = keyframes`
   from {
@@ -33,4 +33,4 @@ export const liftUp = keyframes`
     opacity: 1;
     transform: translateY(0);
   }
-`
+`;
