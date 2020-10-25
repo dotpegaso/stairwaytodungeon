@@ -217,6 +217,8 @@ export const Link = styled.a`
 export const StyledFeed = styled(Feed)`
   height: calc(100% - 140px);
   width: fit-content;
+  ${animation}
+  animation-delay: 1s;
 
   & img {
     height: 100%;
@@ -240,6 +242,8 @@ export const StyledFeed = styled(Feed)`
 
 export const Footer = styled.div`
   width: 30%;
+  ${animation}
+  animation-delay: 1s;
 
   @media (max-width: 490px) {
     width: 80%;
