@@ -10,7 +10,7 @@ import instagram4 from "../../resources/img/03.png";
 
 const hrefs = {
   pdf:
-    "https://drive.google.com/file/d/1DGmjgP6A9RckHparofQG5wqoFwFaA5fx/view?usp=sharing",
+    "https://drive.google.com/file/d/1gIxcNkaA9oFgrOYghP2AKSPpBIiP2kI1/view?usp=sharing",
   package:
     "https://drive.google.com/drive/folders/1Hptrbi429dAmxj22yxGpiJaL8sLZxqcZ?usp=sharing",
   collection:
