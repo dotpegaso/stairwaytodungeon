@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+<url>
+  <loc>https://www.stairwaytodungeon.com</loc>
+  <lastmod>2021-02-05T05:58:13+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.stairwaytodungeon.com</loc>
+  <image:image>
+    <image:loc>https://www.stairwaytodungeon.com/static/media/00.8c4fd260.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.stairwaytodungeon.com/static/media/01.2c625a6f.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.stairwaytodungeon.com/static/media/02.2f205698.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.stairwaytodungeon.com/static/media/03.54c2ebaa.png</image:loc>
+  </image:image>
+</url> 
+
+
+</urlset>
