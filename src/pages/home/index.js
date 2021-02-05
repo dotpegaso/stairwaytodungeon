@@ -3,6 +3,17 @@ import * as S from "./styles";
 
 import logo from "../../resources/img/stairway_logo.svg";
 
+const hrefs = {
+  pdf:
+    "https://drive.google.com/file/d/1DGmjgP6A9RckHparofQG5wqoFwFaA5fx/view?usp=sharing",
+  package:
+    "https://drive.google.com/drive/folders/1Hptrbi429dAmxj22yxGpiJaL8sLZxqcZ?usp=sharing",
+  collection:
+    "https://drive.google.com/drive/folders/1tg3sTMbm065Dkgw9dku084oelrwkZipQ?usp=sharing",
+  twitter: "https://twitter.com/dotpegaso",
+  instagram: "https://instagram.com/stairwaytodungeon",
+};
+
 const Home = () => (
   <S.Container>
     <S.Wrapper>
@@ -19,28 +30,21 @@ const Home = () => (
           Que suas histórias se tornem inesquecíveis através de ideias
           não-convencionais.
         </S.Text>
-        <S.Text small>Faça download do zine, é gratuito ⤵</S.Text>
+        <S.Text small>Faça download do zine #1, é gratuito ⤵</S.Text>
         <>
-          <S.RainbowButton
-            id="pdf-download"
-            href="https://drive.google.com/file/d/1Id-cRlGqDLeDdLYlWnXL1jzw_g055yT8/view?usp=sharing"
-            target="_blank"
-          >
+          <S.RainbowButton id="pdf-download" href={hrefs.pdf} target="_blank">
             PDF
           </S.RainbowButton>
           <S.RainbowButton
             id="pack-download"
-            href="https://drive.google.com/drive/folders/1BLdEVxxwZ5RGwXNQyFbvdZKrNUew_K2E?usp=sharing"
+            href={hrefs.package}
             target="_blank"
           >
-            Material para impressão
+            PDF + Capa + Panfleto
           </S.RainbowButton>
         </>
-        <S.Link
-          href="https://www.youtube.com/watch?v=aR17i7u72A0"
-          target="_blank"
-        >
-          Como montar o material de impressão
+        <S.Link href={hrefs.collection} target="_blank">
+          Acessar a pasta com todas as edições
         </S.Link>
       </S.Content>
     </S.Wrapper>
@@ -52,20 +56,20 @@ const Home = () => (
       />
       <S.Footer>
         <S.Text small>
-          Uma publicação independente por{" "}
+          Uma publicação independente por
           <a
-            href="https://twitter.com/dotpegaso"
+            href={hrefs.twitter}
             target="_blank"
             rel="noreferrer"
             id="writer-instagram"
           >
             @dotpegaso
           </a>
-          , que serve como ferramenta criativa para jogadores de rpg
+          , para servir como ferramenta criativa aos jogadores de rpg
         </S.Text>
         <S.RainbowButton
           id="zine-instagram"
-          href="https://instagram.com/stairwaytodungeon"
+          href={hrefs.instagram}
           target="_blank"
         >
           👉🏾 @stairwaytodungeon
