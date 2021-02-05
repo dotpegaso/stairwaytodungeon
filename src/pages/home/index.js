@@ -3,6 +3,11 @@ import * as S from "./styles";
 
 import logo from "../../resources/img/stairway_logo.svg";
 
+import instagram1 from "../../resources/img/00.png";
+import instagram2 from "../../resources/img/01.png";
+import instagram3 from "../../resources/img/02.png";
+import instagram4 from "../../resources/img/03.png";
+
 const hrefs = {
   pdf:
     "https://drive.google.com/file/d/1DGmjgP6A9RckHparofQG5wqoFwFaA5fx/view?usp=sharing",
@@ -13,6 +18,8 @@ const hrefs = {
   twitter: "https://twitter.com/dotpegaso",
   instagram: "https://instagram.com/stairwaytodungeon",
 };
+
+const instagramPreviews = [instagram1, instagram2, instagram3, instagram4];
 
 const Home = () => (
   <S.Container>
@@ -49,6 +56,13 @@ const Home = () => (
       </S.Content>
     </S.Wrapper>
     <S.Wrapper>
+      <S.InstagramContainer>
+        {instagramPreviews.map((image) => (
+          <a href={hrefs.instagram} target="_blank" rel="noreferrer">
+            <S.InstagramPreview src={image} />
+          </a>
+        ))}
+      </S.InstagramContainer>
       <S.Footer>
         <S.Text small>
           Uma publicação independente por

@@ -263,3 +263,28 @@ export const Footer = styled.div`
     margin: 0 auto;
   }
 `;
+
+export const InstagramContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 60%;
+  width: 55%;
+  align-items: center;
+
+  @media (max-width: 490px) {
+    width: 80%;
+  }
+`;
+
+export const InstagramPreview = styled.img`
+  height: 12.5vw;
+  width: 12.5vw;
+  object-fit: contain;
+
+  @media (max-width: 490px) {
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+  }
+`;
