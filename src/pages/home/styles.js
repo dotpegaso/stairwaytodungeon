@@ -278,6 +278,8 @@ export const InstagramContainer = styled.div`
 `;
 
 export const InstagramPreview = styled.img`
+  ${animation}
+  animation-delay: 1.2s;
   height: 12.5vw;
   width: 12.5vw;
   object-fit: contain;
