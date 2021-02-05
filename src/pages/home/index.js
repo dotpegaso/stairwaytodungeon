@@ -49,11 +49,6 @@ const Home = () => (
       </S.Content>
     </S.Wrapper>
     <S.Wrapper>
-      <S.StyledFeed
-        userName="stairwaytodungeon"
-        classNameLoading="Loading"
-        limit="4"
-      />
       <S.Footer>
         <S.Text small>
           Uma publicação independente por
@@ -63,7 +58,7 @@ const Home = () => (
             rel="noreferrer"
             id="writer-instagram"
           >
-            @dotpegaso
+            {` @dotpegaso`}
           </a>
           , para servir como ferramenta criativa aos jogadores de rpg
         </S.Text>
