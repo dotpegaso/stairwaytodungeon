@@ -124,7 +124,6 @@ export const Text = styled.p`
   line-height: 1.5;
   font-weight: 300;
   width: 90%;
-  margin-bottom: 30px;
 
   a {
     color: var(--light);
@@ -144,6 +143,7 @@ export const Text = styled.p`
     `
     font-size: 18px;
     color: var(--dark-text);
+    margin-top: 10px;
   `}
 `;
 
@@ -173,7 +173,7 @@ export const RainbowButton = styled.a`
   align-items: center;
   font-weight: 600;
   color: var(--light);
-  max-width: 300px;
+  margin-top: 20px;
   ${rainbowEffect}
 
   :first-of-type {
@@ -205,7 +205,7 @@ export const Link = styled.a`
   border-bottom: 1px solid;
   color: var(--light);
   opacity: 0.5;
-  margin-top: 20px;
+  margin: 20px 0;
 
   @media (max-width: 490px) {
     padding-bottom: 3px;

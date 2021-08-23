@@ -9,14 +9,15 @@ import instagram3 from "../../resources/img/02.png";
 import instagram4 from "../../resources/img/03.png";
 
 const hrefs = {
-  pdf:
-    "https://drive.google.com/file/d/1gIxcNkaA9oFgrOYghP2AKSPpBIiP2kI1/view?usp=sharing",
+  pdf: "https://drive.google.com/file/d/1gIxcNkaA9oFgrOYghP2AKSPpBIiP2kI1/view?usp=sharing",
   package:
     "https://drive.google.com/drive/folders/1Hptrbi429dAmxj22yxGpiJaL8sLZxqcZ?usp=sharing",
   collection:
     "https://drive.google.com/drive/folders/1tg3sTMbm065Dkgw9dku084oelrwkZipQ?usp=sharing",
   twitter: "https://twitter.com/dotpegaso",
   instagram: "https://instagram.com/stairwaytodungeon",
+  silvermountain:
+    "https://drive.google.com/file/d/1jaFy2Gdl9KrPQYm0y7ZMYHdoGt_uuKDZ/view?usp=sharing",
 };
 
 const instagramPreviews = [instagram1, instagram2, instagram3, instagram4];
@@ -40,16 +41,23 @@ const Home = () => (
         <S.Text small>Faça download do zine #1, é gratuito ⤵</S.Text>
         <>
           <S.RainbowButton id="pdf-download" href={hrefs.pdf} target="_blank">
-            PDF
+            PDF Zine #1
           </S.RainbowButton>
           <S.RainbowButton
             id="pack-download"
             href={hrefs.package}
             target="_blank"
           >
-            PDF + Capa + Panfleto
+            PDF #1 + Capa + Panfleto
           </S.RainbowButton>
         </>
+        <S.RainbowButton
+          id="dio-download"
+          href={hrefs.silvermountain}
+          target="_blank"
+        >
+          O Anão na Montanha Prateada
+        </S.RainbowButton>
         <S.Link href={hrefs.collection} target="_blank">
           Acessar a pasta com todas as edições
         </S.Link>
