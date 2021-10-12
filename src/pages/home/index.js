@@ -18,6 +18,8 @@ const hrefs = {
   instagram: "https://instagram.com/stairwaytodungeon",
   silvermountain:
     "https://drive.google.com/file/d/1jaFy2Gdl9KrPQYm0y7ZMYHdoGt_uuKDZ/view?usp=sharing",
+  portalBeyond:
+    "https://drive.google.com/file/d/1S5POhIubIAxOi17stN0RXqF_JU61JX7H/view?usp=sharing",
 };
 
 const instagramPreviews = [instagram1, instagram2, instagram3, instagram4];
@@ -38,8 +40,10 @@ const Home = () => (
           Que suas histórias se tornem inesquecíveis através de ideias
           não-convencionais.
         </S.Text>
-        <S.Text small>Faça download do zine #1, é gratuito ⤵</S.Text>
-        <>
+        <S.Text small>
+          Faça download da última mini-aventura, é gratuita ⤵
+        </S.Text>
+        {/* <>
           <S.RainbowButton id="pdf-download" href={hrefs.pdf} target="_blank">
             PDF Zine #1
           </S.RainbowButton>
@@ -50,13 +54,9 @@ const Home = () => (
           >
             PDF #1 + Capa + Panfleto
           </S.RainbowButton>
-        </>
-        <S.RainbowButton
-          id="dio-download"
-          href={hrefs.silvermountain}
-          target="_blank"
-        >
-          O Anão na Montanha Prateada
+        </> */}
+        <S.RainbowButton id="portal" href={hrefs.portalBeyond} target="_blank">
+          O Pergaminho Além do Portal
         </S.RainbowButton>
         <S.Link href={hrefs.collection} target="_blank">
           Acessar a pasta com todas as edições
